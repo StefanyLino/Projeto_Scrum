@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link com o Style (CSS) -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- Alteração de Ícone no topo (Favicon) -->
     <link rel="icon" type="image/x-icon" href="Imagens/Favicon.jpeg">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-        </style>
+    <script src="https://kit.fontawesome.com/e08ed7ffaa.js" crossorigin="anonymous"></script>
     <title>Projeto SCRUM</title>
 </head>
+
 <body>
+    <nav>
+        <div class="logo"><img src="Imagens/Banco.png" height="50px" alt="Logo"></div>
+        <div class="nav-items">
+            <a href="Home.html"><i class="fa-solid fa-house"></i>&nbsp;HOME</a>
+            <a href="CadastroFor.html"><i class="fa-solid fa-folder"></i>&nbsp;Sistema de Cadastro</a>
+            <a href="Index.html"><i class="fa-solid fa-user"></i>&nbsp;Login</a>
+        </div>
+    </nav>
     <div class="page">
+        <!-- Logo e nome do Banco -->
         <img src="Imagens/Banco.png" alt="Banco">
+        <!-- Div para a criação do fundo branco -->
         <div class="card">
+            <!-- Formulários -->
             <form>
                 <h2>LOGIN</h2>
                 <p>Usuário:</p>
-                <input class="campo" type="usuario" placeholder="Digite seu usuário">
+                <input class="campo" type="usuario" placeholder="Digite seu usuário" required>
                 <p>Senha:</p>
-                <input class="campo" type="password" placeholder="Digite sua senha">
+                <input class="campo" type="password" placeholder="Digite sua senha" required>
                 <a href="Senha.html">Esqueci minha senha</a>
-                <a href="CadastroFor.html"><input class="btn" type="button" value="Entrar"></a>
-                <p></p><a href="Fornecedor.html">Cadastre-se</a>
+                <!-- Botão de entrar com link para outra página -->
+                <a href="Home.html"><input class="btn" type="button" value="Entrar"></a>
+                <p>Ainda não tem uma conta? <a href="Cadastre_Se.html">Cadastre-se.</a></p>
             </form>
         </div>
     </div>
-    
+
 </body>
 </html>
