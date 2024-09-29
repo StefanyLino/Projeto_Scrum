@@ -1,11 +1,36 @@
+/* Fonte importada */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+/* Alteração de configurações básicas e fonte */
 body {
     padding: 0;
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
 }
 
+nav {
+    height: 80px;
+    background: #f2e205;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Configuração de Div (disposição, tamanho e fundo) */
 .page {
     display: flex;
     flex-direction: column;
@@ -15,8 +40,10 @@ body {
     height: 100vh;
     background: rgb(208,195,14);
     background: linear-gradient(90deg, rgba(208,195,14,1) 0%, #f2e205 35%, rgba(246,239,137,1) 100%);
+    z-index: 1;
 }
 
+/* Configuração do fundo branco (tamanho, fundo, bordas e efeito) */
 .card {
     width: 5%; 
     max-width: 450px;
@@ -26,6 +53,7 @@ body {
     box-shadow: 0 0 10px 20px rgba(148, 108, 8, 0.03);
 }
 
+/* Configuração da imagem da LOGO (tamanho e alinhamento) */
 img {
     width: 100%; 
     max-width: 400px;
@@ -34,17 +62,20 @@ img {
     
 }
 
+/* Configuração dos formulários (disposição) */
 form {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
+/* Configuração do H2 */
 h2 {
     align-self: center;
     color: #204f8c;
 }
 
+/* Configuração dos formulários (bordas, transição, tamanho e cor) */
 .campo {
     padding: 10px;
     border-radius: 7px;
@@ -64,6 +95,7 @@ h2 {
     border-color: #f2e205;
 }
 
+/* Configuração do botão de cadastro */
 .btn {
     padding: 15px;
     color: #fff;
@@ -75,48 +107,68 @@ h2 {
     cursor: pointer;
     transform: all linear 190ms;
     align-content: center;
+    display: inline-block; /* Para se comportar como um bloco */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
+/* Hover do botão */
 .btn:hover {
     transform: scale(1.04);
     background-color: #e0d101;
 }
 
+/* Configuração do Parágrafo */
 p {
     font-size: 0.9em;
     color: #204f8c;
 }
 
+/* Configuração dos Links */
 a {
     font-size: 0.9em;
     color: #204f8c;
     text-decoration: none;
 }
 
-hr {
-    font-size: 1.8em;
-    font-weight: 600;
-    color: #444;
+/* Configuração do botão de sair */
+.sair {
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;   
 }
 
-/* Media Queries */
+/* Media Queries - Responsividade */
 
 /* Mobile */
 @media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        height: auto; /* Ajusta a altura */
+    }
+
+    nav a {
+        padding: 5px; 
+        margin: 0; 
+    }
     .page {
-        height: auto;
+        height: 100vh;
     }
 
     img {
         width: 70%; 
         margin-bottom: 0px; 
+        position: relative;
+        align-content: center;
     }
 
     .card {
         width: 70%; 
-        padding: 20px; 
+        padding: 1rem; 
     }
 }
+
 
 /* Tablet */
 @media (min-width: 768px) and (max-width:1023px) {
