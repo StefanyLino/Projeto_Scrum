@@ -1,11 +1,36 @@
+/* Fonte importada */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+/* Alteração de configurações básicas e fonte */
 body {
     padding: 0;
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
 }
 
+nav {
+    height: 80px;
+    background: #f2e205;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Configuração de Div (disposição, tamanho e fundo) */
 .page {
     display: flex;
     flex-direction: column;
@@ -13,12 +38,14 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: rgb(208,195,14);
-    background: linear-gradient(90deg, rgba(208,195,14,1) 0%, #f2e205 35%, rgba(246,239,137,1) 100%);
+    background: rgb(208, 195, 14);
+    background: linear-gradient(90deg, rgba(208, 195, 14, 1) 0%, #f2e205 35%, rgba(246, 239, 137, 1) 100%);
+    z-index: 1;
 }
 
+/* Configuração do fundo branco (tamanho, fundo, bordas e efeito) */
 .card {
-    width: 90%; 
+    width: 90%;
     max-width: 450px;
     background: #fff;
     padding: 34px;
@@ -26,26 +53,22 @@ body {
     box-shadow: 0 0 10px 20px rgba(148, 108, 8, 0.03);
 }
 
+/* Configuração da imagem da LOGO (tamanho e alinhamento) */
 img {
-    width: 80%; 
+    width: 80%;
     max-width: 400px;
-    margin-bottom: -30px; 
+    margin-bottom: -30px;
     align-items: center;
-    
+
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
+/* Configuração do H2 */
 h2 {
     align-self: center;
     color: #204f8c;
 }
 
-
+/* Configuração das listas */
 ul {
     margin-top: 0%;
     font-size: 20px;
@@ -53,38 +76,44 @@ ul {
     position: relative;
 }
 
+/* Configuração dos Links */
 a {
     font-size: 15px;
     color: #204f8c;
     text-decoration: none;
 }
 
+/* Área de sair */
 .sair {
     font-size: 12px;
 }
 
-hr {
-    font-size: 1.8em;
-    font-weight: 600;
-    color: #444;
-}
-
-/* Media Queries */
+/* Media Queries - Responsividade*/
+/* Mobile */
 @media (max-width: 600px) {
-    .page {
-        height: auto;
+    nav {
+        flex-direction: column; 
+        height: 200;
+    }
+
+    nav a {
+        padding: 3px; 
+        margin: 0; 
     }
 
     img {
         width: 70%; 
         margin-bottom: 0px; 
+        position: relative;
+        align-content: center;
     }
 
     .card {
         width: 70%; 
-        padding: 20px; 
+        padding: 1rem; 
     }
 }
+
 
 @media (min-width: 768px) and (max-width:1023px) {
     .page {
@@ -93,12 +122,12 @@ hr {
 
     img {
         width: 70%;
-        margin-bottom: 0px; 
+        margin-bottom: 0px;
     }
 
     .card {
-        width: 70%; 
-        padding: 20px; 
+        width: 70%;
+        padding: 20px;
     }
 }
 
@@ -109,11 +138,11 @@ hr {
 
     img {
         width: 100%;
-        margin-bottom: 0px; 
+        margin-bottom: 0px;
     }
 
     .card {
-        width: 100%; 
-        padding: 20px; 
+        width: 100%;
+        padding: 20px;
     }
 }
