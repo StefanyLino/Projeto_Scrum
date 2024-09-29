@@ -5,6 +5,29 @@
     margin-right: auto; 
     text-align: center;
 }
+
+nav {
+    height: 80px;
+    background: #f2e205;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -20,21 +43,16 @@ body {
     height: 100vh;
     background: rgb(208,195,14);
     background: linear-gradient(90deg, rgba(208,195,14,1) 0%, #f2e205 35%, rgba(246,239,137,1) 100%);
+    z-index: 1;
 }
 
 .card {
     width: 90%; 
-    max-width: 450px;
+    max-width: 500px;
     background: #fff;
     padding: 34px;
     border-radius: 10px;
     box-shadow: 0 0 10px 20px rgba(148, 108, 8, 0.03);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
 }
  
 img {
@@ -52,9 +70,28 @@ h2 {
 a {
     font-size: 0.9em;
     color: #204f8c;
-    text-decoration: none;
 }
 
+.btn {
+    padding: 15px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #204f8c;
+    cursor: pointer;
+    transform: all linear 190ms;
+    align-content: center;
+    display: inline-block; /* Para se comportar como um bloco */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Hover do botão */
+.btn:hover {
+    transform: scale(1.04);
+    background-color: #11376A;
+}
 .sair {
     margin-top: 10px;
     font-size: 15px;
@@ -63,29 +100,75 @@ a {
     text-align: left;   
 }
 
-hr {
-    font-size: 1.8em;
-    font-weight: 600;
-    color: #444;
+#Tabela{
+    overflow-x: auto;
+}
+.tabela {
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+.tabela thead tr {
+    background-color: #204f8c;
+    color: #ffffff;
+    text-align: left;
+}
+
+.tabela th,
+.tabela td {
+    padding: 12px 15px;
+}
+
+.tabela tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabela tbody tr:last-of-type {
+    border-bottom: 2px solid #204f8c;
+}
+
+.tabela tbody tr.active-row {
+    font-weight: bold;
+    color: #204f8c;
+}
 
 /* Media Queries */
+/* Mobile */
 @media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        height: auto; /* Ajusta a altura */
+    }
+
+    nav a {
+        padding: 5px; 
+        margin: 0; 
+    }
     .page {
-        height: auto;
+        height: 100vh;
     }
 
     img {
         width: 70%; 
         margin-bottom: 0px; 
+        position: relative;
+        align-content: center;
     }
 
     .card {
         width: 70%; 
-        padding: 20px; 
+        padding: 1rem; 
     }
 }
+
 
 @media (min-width: 768px) and (max-width:1023px) {
     .page {

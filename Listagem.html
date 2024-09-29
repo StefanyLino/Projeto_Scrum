@@ -6,19 +6,27 @@
     <link rel="stylesheet" href="CSS/Listagem.css">
     <link rel="icon" type="image/x-icon" href="Imagens/Favicon.jpeg">
     <script src="https://kit.fontawesome.com/e08ed7ffaa.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-        </style>
     <title>Projeto SCRUM</title>
 </head>
 <body>
+    <nav>
+        <div class="logo"><img src="Imagens/Banco.png" height="50px" alt="Logo"></div>
+        <div class="nav-items">
+            <a href="Home.html"><i class="fa-solid fa-house"></i>&nbsp;HOME</a>
+            <a href="CadastroFor.html"><i class="fa-solid fa-folder"></i>&nbsp;Sistema de Cadastro</a>
+            <a href="Index.html"><i class="fa-solid fa-user"></i>&nbsp;Login</a>
+        </div>
+    </nav>
     <div class="page">
+        <!-- Logo e nome do Banco -->
         <img src="Imagens/Banco.png" alt="Banco">
+        <!-- Div para a criação do fundo branco -->
         <div class="card">
-            <form>
             <h2>LISTAGEM DE PRODUTOS</h2>
-                <div class="tabela"></div>
-                    <table border="1">
+        <!-- Div para a criação de tabela -->
+                <div id="Tabela">
+                <!-- Tabela e alteração de borda -->
+                    <table class="tabela">
                         <thead>
                             <th>ID</th>
                             <th>Nome</th>
@@ -33,7 +41,7 @@
                         <td>...</td>
                         <td>R$00,00</td>
                         <td></td>
-                        <td><a href="#">Editar</a><br><a href="#">Excluir</a></td>
+                        <td><a href="#">Editar</a><br><a href="#">Excluir</a><br><a href="#">Visualizar</a></td>
                     </tr>
                     <tr>
                         <th>2</th>
@@ -41,7 +49,7 @@
                         <td>...</td>
                         <td>R$00,00</td>
                         <td></td>
-                        <td><a href="#">Editar</a><br><a href="#">Excluir</a></td>
+                        <td><a href="#">Editar</a><br><a href="#">Excluir</a><br><a href="#">Visualizar</a></td>
                     </tr>
                     <tr bgcolor="#f2f2f2">
                         <th>3</th>
@@ -49,11 +57,14 @@
                         <td>...</td>
                            <td>R$00,00</td>
                         <td></td>
-                        <td><a href="#">Editar</a><br><a href="#">Excluir</a></td>
+                        <td><a href="#">Editar</a><br><a href="#">Excluir</a><br><a href="#">Visualizar</a></td>
                     </tr>
                 </table>
+                </div>
+                <a href="Produto.html"><input class="btn" type="button" value="Adicionar Itens"></a>
+                <br>
                 <div class="sair">
-                    <i class="fa-solid fa-share"></i><a href="Index.html">Sair</a>
+                    <i class="fa-solid fa-share" style="color: #204f8c;"></i><a href="CadastroFor.html">Voltar</a>
                 </div>
             </div>
         </form>
