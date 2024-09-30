@@ -1,2 +1,4 @@
-# Projeto_Scrum
- 
+# Projeto Scrum ⋆｡°✩
+
+![Banco](https://github.com/user-attachments/assets/6b6fc801-5938-4fa3-bbda-90afe4bc4860)
+>O projeto desenvolvido para o Banco do Brasil visa modernizar a gestão de fornecedores e produtos através de uma aplicação web intuitiva. Reconhecida por sua diversidade de serviços financeiros e compromisso com a sustentabilidade, a instituição enfrenta desafios operacionais devido à utilização de sistemas legados e documentos físicos. Com a digitalização de 73% das transações bancárias no Brasil, tornou-se imperativo adotar soluções mais eficientes. A nova aplicação permitirá que os funcionários do banco cadastrem, atualizem, visualizem e excluam informações sobre fornecedores e produtos de forma ágil e eficaz. Esse investimento em tecnologia não apenas aprimora a eficiência operacional, mas também contribui para um sistema financeiro mais responsável e sustentável. Ao facilitar a gestão, a aplicação permitirá ao Banco do Brasil acompanhar seu crescimento e se manter competitivo no mercado financeiro. Com uma interface amigável, a nova solução digital se alinha às tendências atuais, proporcionando melhorias significativas nos processos internos e reforçando o compromisso da instituição com a inovação e a eficiência.
