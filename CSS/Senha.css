@@ -144,7 +144,7 @@ a {
 @media (max-width: 600px) {
     nav {
         flex-direction: column; 
-        height: auto; /* Ajusta a altura */
+        height: auto; 
     }
 
     nav a {
@@ -152,7 +152,7 @@ a {
         margin: 0; 
     }
     .page {
-        height: 100vh;
+        height: 160vh;
     }
 
     img {
