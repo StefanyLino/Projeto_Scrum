@@ -1,6 +1,6 @@
 # Projeto Scrum ⋆｡°✩
 
-## Projeto Didático: Banco do Brasil <img src="https://github.com/user-attachments/assets/e86dfe96-55c3-43d8-b614-5bcda8b36e62" alt="Favicon" width="20px" height="20px">
+## Projeto Didático: Banco do Brasil - GRUPO 6 <img src="https://github.com/user-attachments/assets/e86dfe96-55c3-43d8-b614-5bcda8b36e62" alt="Favicon" width="20px" height="20px">
 *⚠️ Esse projeto foi feito com base em fins educacionais, qualquer ligação com a marca "Banco do Brasil" é feita para fins didáticos.*
 
 ![image](https://github.com/user-attachments/assets/1a0dc068-47d7-4abd-ad9f-80ee88beccfe)
