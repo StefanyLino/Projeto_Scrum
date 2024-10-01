@@ -139,7 +139,7 @@ a {
 /* Media Queries - Responsividade */
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     nav {
         flex-direction: column; 
         height: auto; /* Ajusta a altura */
@@ -150,7 +150,7 @@ a {
         margin: 0; 
     }
     .page {
-        height: 100vh;
+        height: 160vh;
     }
 
     img {
@@ -166,24 +166,23 @@ a {
     }
 }
 
-
-@media (min-width: 768px) and (max-width:1023px) {
+@media (min-width:768px) and (max-width:1023px) {
     .page {
-        height: auto;
+        height: 170vh;
     }
 
     img {
-        width: 70%;
+        width: 100%;
         margin-bottom: 0px; 
     }
 
     .card {
-        width: 70%; 
+        width: 100%; 
         padding: 20px; 
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1024px) {
     .page {
         height: 130vh;
     }
