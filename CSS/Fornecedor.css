@@ -130,6 +130,7 @@ a {
     text-decoration: none;
 }
 
+/* Configuração do botão de sair */
 .sair {
     margin-top: 10px;
     font-size: 15px;
@@ -143,7 +144,8 @@ a {
 /* Mobile */
 @media (max-width: 600px) {
     nav {
-        height: auto; /* Ajusta a altura */
+        flex-direction: column; 
+        height: auto;
     }
 
     nav a {
@@ -151,7 +153,7 @@ a {
         margin: 0; 
     }
     .page {
-        height: 0vh;
+        height: 200vh;
     }
 
     img {
@@ -169,18 +171,18 @@ a {
 
 
 /* Tablet */
-@media (min-width: 768px) and (max-width:1023px) {
+@media (min-width:768px) and (max-width:1023px) {
     .page {
-        height: auto;
+        height: 200vh;
     }
 
     img {
-        width: 70%;
+        width: 100%;
         margin-bottom: 0px; 
     }
 
     .card {
-        width: 70%; 
+        width: 100%; 
         padding: 20px; 
     }
 }
