@@ -153,3 +153,19 @@ a.button:hover {
         padding: 0.3rem 0; /* Ajusta o padding dos links para telas pequenas */
     }
 }
+
+@media (min-width:768px) and (max-width:1023px) {
+    .page {
+        height: 170vh;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 0px; 
+    }
+
+    .card {
+        width: 100%; 
+        padding: 20px; 
+    }
+}
