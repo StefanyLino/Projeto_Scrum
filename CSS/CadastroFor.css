@@ -114,20 +114,19 @@ a {
     }
 }
 
-
-@media (min-width: 768px) and (max-width:1023px) {
+@media (min-width:768px) and (max-width:1023px) {
     .page {
-        height: auto;
+        height: 100vh;
     }
 
     img {
-        width: 70%;
-        margin-bottom: 0px;
+        width: 100%;
+        margin-bottom: 0px; 
     }
 
     .card {
-        width: 70%;
-        padding: 20px;
+        width: 100%; 
+        padding: 20px; 
     }
 }
 
