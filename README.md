@@ -35,15 +35,17 @@ Versão Mobile
 
 O cronograma foi realizado utilizando a plataforma [Trello](https://trello.com/pt-BR?campaign=19269516466&adgroup=148159506607&targetid=kwd-3609071522&matchtype=e&network=g&device=c&device_model=&creative=641463051732&keyword=trello&placement=&target=&ds_eid=700000001557344&ds_e1=GOOGLE&gad_source=1&gclid=Cj0KCQjwmOm3BhC8ARIsAOSbapWUUXH9gNSHReSfJl39ra0vfcci0OxNkfwm0nYx0ZxEAGASJQKWHA8aAtnPEALw_wcB) e pelo Excel, onde foi planejado o andamento e desenvolvimento do projeto. Foram desenvolvidas versões diferentes que acompanham os passos do projeto.
 
-<img width="550" alt="image" src="https://github.com/user-attachments/assets/7eb14f34-0659-446b-9263-dab773061b84"><br>
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/ac3571c4-0681-4641-8898-9ba16602bf3d"><br>
 Versão Kanban
 
-<img width="550" alt="image" src="https://github.com/user-attachments/assets/d2f6761d-611d-494b-be9e-48f2fff2f8c4"><br>
-Versão Excel
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/848af105-11ca-49a6-9293-96a450b9a92c"><br>
+Versão Scrum
+
 
 ### Programação/Código
 
-A programação deste projeto foi feita utilizando HTML e CSS para construir uma interface responsiva e acessível. A estruturação dos elementos HTML e a estilização com CSS foram essenciais para criar uma plataforma funcional e amigável.<br>
+A codificação deste projeto foi feita utilizando HTML e CSS para construir uma interface responsiva e acessível. A estruturação dos elementos HTML e a estilização com CSS foram essenciais para criar uma plataforma funcional e amigável.<br>
 •	HTML: As principais estruturas HTML incluem o uso de tags nav, section, button, e div, para organizar os campos de cadastro e os botões de ação.<br>
 •	CSS: Foram implementadas classes para estilizar os elementos de forma responsiva, como .btn, .card, e .campo. O CSS também ajusta a interface para diferentes dispositivos com Media Queries que garantem uma experiência consistente em dispositivos móveis e desktop.<br>
 
@@ -51,3 +53,33 @@ A programação deste projeto foi feita utilizando HTML e CSS para construir uma
 Declaração de estilos CSS (exemplo).
 
 Após esses passos, juntamos todo o conteúdo produzido em um arquivo de texto, criando uma documentação seguindo as normas ABNT. 
+
+### Modelagem
+Para a elaboração do Banco de Dados, fizemos a modelagem e o SQL 
+
+##### Dicionário de Dados
+> Lista de instruções para o meu banco de dados, que descreve informações, o que elas representam e como será usada.<br>
+> SERVE PARA: Saber como os dados devem ser usados e organizados. Previne erros.<br>
+![image](https://github.com/user-attachments/assets/ecf9595b-ecff-44c0-b267-325aa2cfb429)
+
+
+##### Modelo Conceitual
+> Forma de representar as entidades (coisas sobre as quais queremos armazenar informações) e os relacionamentos entre as mesmas.<br>
+> EXEMPLO: Em um médico, as entidades seriam médicos, consultas, paciente, funcionários…<br>
+> SERVE PARA: Ajuda a visualizar como os dados estão organizados e como se relacionam.<br>
+
+![image](https://github.com/user-attachments/assets/38b5a532-5dd0-453e-ae6c-6fe83d24fed3)
+![image](https://github.com/user-attachments/assets/d30f99e6-7854-43e5-8ee5-6ba21f4fcce2)
+
+##### Modelo Lógico
+> No MER se usa figuras geométricas, mas no DER a construção é mais detalhada em tabelas… Aproximação de um Banco de Dados real.<br>
+> - Entidades - Tabela no Banco de Dados<br>
+> - Atributos - As colunas<br>
+> - Relacionamentos - Ligação entre tabelas<br>
+> Define tipos de dados, chaves primárias (identificador único de cada tabela), chaves estrangeiras (ligações entre uma tabela e outra) e cardinalidades (quantidade de elementos que se relacionam entre si).
+![image](https://github.com/user-attachments/assets/b316742a-587c-4f45-96a0-4b36fced4f0d)
+
+##### Modelo Físico
+> Foi feito através do MySQL WorkBench, para guardar as informações em tabelas.
+> ![image](https://github.com/user-attachments/assets/71a7777d-7869-4586-9aea-392ab5071d1f)
+
