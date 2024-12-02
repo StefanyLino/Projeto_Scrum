@@ -9,7 +9,7 @@
 }
 
 nav {
-    height: 80px;
+    height: 65px;
     background: #f2e205;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,7 @@ nav {
 .logo {
     margin: 0;
     padding: 0;
+    margin-left: 20px;
 }
 
 nav a {
@@ -32,7 +33,7 @@ nav a {
 }
 
 .hero {
-    height: 100vh; 
+    height: 88.9vh; 
     background-image: url(/Imagens/bank.jpg); 
     background-size: cover; 
     background-position: center; 
@@ -50,6 +51,7 @@ nav a {
 }
 
 .card {
+    margin-left: 25px;
     width: 100%;
     max-width: 500px;
     height: 400px;
@@ -94,6 +96,7 @@ a.button {
     text-decoration: none; 
     display: inline-block; /* Para se comportar como um bloco */
     text-decoration: none; /* Remove o sublinhado */
+    transition: 0.3s;
 }
 
 a.button:hover {
