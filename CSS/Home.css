@@ -9,6 +9,7 @@
 }
 
 nav {
+    position: sticky;
     height: 65px;
     background: #f2e205;
     display: flex;

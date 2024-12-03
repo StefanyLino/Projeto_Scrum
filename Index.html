@@ -11,19 +11,9 @@
     <script src="https://kit.fontawesome.com/e08ed7ffaa.js" crossorigin="anonymous"></script>
     <title>Projeto SCRUM</title>
 </head>
-
 <body>
-    <nav>
-        <div class="logo"><img src="Imagens/Banco.png" height="50px" alt="Logo"></div>
-        <div class="nav-items">
-            <a href="Home.html"><i class="fa-solid fa-house"></i>&nbsp;HOME</a>
-            <a href="CadastroFor.html"><i class="fa-solid fa-folder"></i>&nbsp;Sistema de Cadastro</a>
-            <a href="Index.html"><i class="fa-solid fa-user"></i>&nbsp;Login</a>
-        </div>
-    </nav>
+
     <div class="page">
-        <!-- Logo e nome do Banco -->
-        <img src="Imagens/Banco.png" alt="Banco">
         <!-- Div para a criação do fundo branco -->
         <div class="card">
             <!-- Formulários -->
@@ -35,7 +25,9 @@
                 <input class="campo" type="password" placeholder="Digite sua senha" required>
                 <a href="Senha.html">Esqueci minha senha</a>
                 <!-- Botão de entrar com link para outra página -->
-                <a href="Home.html"><input class="btn" type="button" value="Entrar"></a>
+                <form action="Home.html" method="GET">
+                    <input class="btn" type="submit" value="Entrar">
+                </form>
                 <p>Ainda não tem uma conta? <a href="Cadastre_Se.html">Cadastre-se.</a></p>
             </form>
         </div>

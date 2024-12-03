@@ -6,15 +6,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
+    background-image: url(/Imagens/Fundo.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
 }
-nav {
-    height: 80px;
-    background: #f2e205;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
-}
+
 
 .logo {
     margin: 0;
@@ -37,9 +35,6 @@ nav a {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: rgb(208,195,14);
-    background: linear-gradient(90deg, rgba(208,195,14,1) 0%, #f2e205 35%, rgba(246,239,137,1) 100%);
-    z-index: 1;
 }
 
 /* Configuração do fundo branco (tamanho, fundo, bordas e efeito) */
